@@ -1,0 +1,8 @@
+<div class="container m-5">
+  <h1>Update a new article</h1>
+  <%= form_for @article, method: :patch do |f| %>
+  Title: <%= f.text_field :title, { class: "form-control" } %><br />
+  Content : <%= f.text_area :content, { class: "form-control" } %><br />
+  <%= f.submit %>
+<% end %>
+</div>
